@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trazinda</title>
+
+    <!--           Favicon                       -->
+    <link rel="shortcut icon" href="recources/img/favicon.png" x-icon>
+
+
+    <meta name="description" content="A web where you can find all about us you need" />
+
+    <!--           css files goes here          -->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.20/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="recources/css/main.css">
+
+
+</head>
+
+<body>
+
+    <!--================   Start Hero =======================-->
+    <header id="hero">
+        <nav class="navbar navbar-expand-lg navbar-light nav " data-uk-sticky="top: 200; bottom: #animation">
+            <div class="container">
+                <a class="navbar-brand" href="#">LuxuryHotel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item me-2 ">
+                            <a class="nav-link active menu-item" aria-current="page" href="#hero" data-uk-scroll>Home</a>
+                        </li>
+                        <li class="nav-item dropdown mx-2 ">
+                            <a class="nav-link dropdown-toggle menu-item" href="#room" data-uk-scroll id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Rooms
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item text-dark" href="#">Kings bedroom</a></li>
+                                <li><a class="dropdown-item text-dark" href="#">Queens and double bedroom</a></li>
+                                <li><a class="dropdown-item text-dark" href="#">levole sollute</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2 ">
+                            <a class="nav-link menu-item" href="#amini" data-uk-scroll>Aminities</a>
+                        </li>
+                        <li class="nav-item mx-2 ">
+                            <a class="nav-link menu-item" href="#footer" data-uk-scroll>Gallery</a>
+                        </li>
+                        <li class="nav-item mx-2 ">
+                            <a class="nav-link menu-item" href="#news" data-uk-scroll>About us</a>
+                        </li>
+                        <li class="nav-item ms-2 ">
+                            <a class="nav-link menu-item" href="#contact" data-uk-scroll>Contact us</a>
+                        </li>
+                    </ul>
+                    </li>
+
+                    </ul>
+                    <ul class="ms-auto navbar-nav social-icon">
+                        <li class="mx-2" onclick="openSearch()">
+                            <a href="#" onclick="openSearch()">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </a>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!--           search bar   start            -->
+        <div class="search-bar" id="search">
+
+            <div class="closeicon">
+                <a href="#" onclick="closeSearch()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="form-box">
+                <form action="#" method="post" class="d-inline-block">
+                    <input class="d-inline-block" type="search" placeholder="search here" id="gsearch" name="gsearch"> <a href="#" type="submit" class="d-inline-block" onclick="closeSearch()">Search</a>
+                </form>
+            </div>
+        </div>
+
+
+        <!--           search bar   end            -->
+
+
+
+        <div class="swiper-hero">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-1">
+                    <div class="contiener">
+                        <div class="hero-content-box text-center">
+                            <h1 class="hero-header" data-uk-scrollspy="cls: uk-animation-slide-top; delay: 100; repeat: true">LuxuryHotel by <br> Untree.co</h1>
+                            <br>
+                            <p class="hero-text" data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 100; repeat: true">
+                                Another free awesome templates for Hotels and any kind of website by <br>
+                                <a href="https://untree.co/" target="_blank" class="text-white font-weight-bold">Untree.co</a> see our.
+                                <a href="https://untree.co/license/" class="text-white font-weight-bold">license
+                                    page</a> for more usage details.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide-2">
+                    <div class="hero-content-box text-center">
+                        <h1 class="hero-header" data-uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Enjoy Your Stay</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-3">
+                    <div class="hero-content-box text-center">
+                        <h1 class="hero-header " data-uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">Away from the Hustle and Bustle of City Life</h1>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </header>
+    <!--================   End Hero =======================-->
+    <!--================   start features room =======================-->
+    <section id="room" data-uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+        <div class="container">
+            <h3 class="text-center section-header" data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 100; repeat: true">
+                Featured Rooms
+            </h3>
+            <br>
+            <br>
+            <div class="row room-content">
+                <div class="col-md-7 room-img-1 p-5">
+                    <img src="recources/img/king-2.jpg" alt="king-bedroom" class="rele-img-1 img-fluid ps-5">
+                    <img src="recources/img/king-1.jpg" alt="king-bedroom" class="abso-img-1 img-fluid w-50">
+
+                </div>
+                <div class="col-md-4 room-content-text d-md-flex flex-md-column align-self-center justify-content-start pe-md-5 pt-md-5">
+                    <h2 data-uk-scrollspy="cls: uk-animation-slide-right; delay: 200; repeat: true">Kings Bedroom</h2>
+                    <br>
+                    <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
+                    <br>
+                    <a href="#" class="botn d-inline-block">Room Details</a>
+                </div>
+                <div class="col-md-4 room-content-text d-md-flex flex-md-column align-self-center justify-content-end ps-md-5 pt-md-5">
+                    <h2 data-uk-scrollspy="cls: uk-animation-slide-left; delay: 400; repeat: true">Queen & Double Bedroom </h2>
+                    <br>
+                    <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
+                    <br>
+                    <a href="#" class="botn">Room Details</a>
+                    <p></p>
+                </div>
+                <div class="col-md-8 room-img-2 p-5">
+                    <img src="recources/img/queen-2.jpg" alt="king-bedroom" class="rele-img-2 img-fluid ps-5">
+                    <img src="recources/img/queen-1.jpg" alt="king-bedroom" class="abso-img-2 img-fluid w-50">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================   End features room ===================-->
+
+    <!--================   Start Aminities room ===================-->
+    <section id="amini">
+        <div class="container">
+            <h3 class="section-header " data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">
+                Hotel Aminities
+            </h3>
+            <br><br>
+            <div class="row">
+                <div class="col-md-4 p-4 text-center wow backInUp">
+                    <div class="aminitie-box p-4" data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true">
+                        <ion-icon name="car-sport-outline"></ion-icon>
+                        <br>
+                        <h5>Free-Self-Parking</h5>
+                        <br>
+                        <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality</p>
+                        <br><br>
+                        <a href="#" class="botn">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4 text-center" data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true">
+                    <div class="aminitie-box p-4">
+                        <ion-icon name="globe-outline"></ion-icon>
+                        <br>
+                        <h5>High speen Internet Access</h5>
+                        <br>
+                        <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality</p>
+                        <br><br>
+                        <a href="#" class="botn">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4 text-center" data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true">
+                    <div class="aminitie-box px-4 pt-4">
+                        <ion-icon name="wifi-outline"></ion-icon>
+                        <br>
+                        <h5>Complimentary WiFi in public areas</h5>
+                        <br>
+                        <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality</p>
+                        <br><br>
+                        <a href="#" class="botn">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4 text-center" data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: true">
+                    <div class="aminitie-box p-4">
+                        <i class="fab fa-elementor"></i>
+                        <br>
+                        <h5>Elevator</h5>
+                        <br>
+                        <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality</p>
+                        <br><br>
+                        <a href="#" class="botn">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4 text-center " data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: true">
+                    <div class="aminitie-box p-4">
+                        <i class="fas fa-vest-patches"></i>
+                        <br>
+                        <h5>Laundry and Valnet</h5>
+                        <br>
+                        <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality</p>
+                        <br><br>
+                        <a href="#" class="botn">read more</a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4 text-center " data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 600; repeat: true">
+                    <div class="aminitie-box p-4">
+                        <i class="fas fa-handshake"></i>
+                        <br>
+                        <h5>Meeting Room</h5>
+                        <br>
+                        <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality</p>
+                        <br><br>
+                        <a href="#" class="botn">read more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--================   End Aminities room ===================-->
+    <!--================   start News and Events room ===================-->
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 news-sec text-center mb-5">
+                    <h3 class="section-header" data-uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: true">
+                        News And Events
+                    </h3>
+                    <br>
+                    <p>A hotel is an establishment that provides paid lodging on a short-term basis.</p>
+                    <br>
+                    <br>
+                    <a href="#" class="botn">All posts</a>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="card" data-uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 400; repeat: true">
+                        <div class="card-img p-0">
+                            <img src="recources/img/news-1.jpg" alt="" class="img-fluid">
+                            <div class="card-body p-0">
+                                <br>
+                                <h5>How algorithms shape our world</h5>
+                                <span>December 20, 2019 • by <a href="#" class="orng">Joefrey Mahusay</a></span>
+                                <br><br>
+                                <p>A hotel is an establishment that provides paid lodging on a short-term basis.</p>
+                                <br>
+                                <a href="#" class="botn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" data-uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 400; repeat: true">
+                        <div class="card-img p-0">
+                            <img src="recources/img/news-2.jpg" alt="" class="img-fluid">
+                            <div class="card-body p-0">
+                                <br>
+                                <h5>How algorithms shape our world</h5>
+                                <span>December 20, 2019 • by <a href="#" class="orng">Joefrey Mahusay</a></span>
+                                <br><br>
+                                <p>A hotel is an establishment that provides paid lodging on a short-term basis.</p>
+                                <br>
+                                <a href="#" class="botn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================   End News and Events room ===================-->
+
+    <!--================   start contact ===================-->
+    <section id="contact">
+        <div class="container">
+            <h4 class="text-center">
+                If you have any special requests, please feel free to call us. <span class="cont-bg">+12.345.678.9012</span>
+            </h4>
+        </div>
+    </section>
+
+    <!--================   End contact ===================-->
+
+    <!--================   Start Footer ===================-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 row">
+                    <div class="col-md-8">
+                        <h5>About Us</h5>
+                        <br>
+                        <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
+                        <br>
+                        <a href="#" class="botn">Read more</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>
+                            Navigation
+                        </h5>
+                        <ul class="list-unstyled navoo">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Rooms</a></li>
+                            <li><a href="#">Aminities</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 row">
+                    <div class="col-md-8 ">
+                        <h5>Address</h5>
+                        <br>
+                        <p>273 South Riverview Rd. New York, NY 10011</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Telephone</h5>
+                        <br>
+                        <p> +1 234 5678 910 <br>+2 234 5678 910 </p>
+                    </div>
+                    <div class="col-md-12">
+                        <h5 class="mb-0">Join Our Newsteller</h5>
+                        <p class="">Be the first to know our latest updates and news!</p>
+                        <br>
+                        <form action="#" method="" class="form-subscribe">
+                            <div class="form-group d-flex">
+                                <input type="email" class="form-control mr-2" placeholder="Enter your email">
+                                <input type="submit" value="Subscribe" class="btn btn-dark px-4 text-white">
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 row mt-5 pt-5">
+                    <div class="col-md-8">
+                        <span>Copyright ©2021 <a href="#">Untree.co.</a> All Rights Reserved. <a href="#" class="orng"> Design by Rafiul Alam</a></span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="ms-auto  social-icon list-inline list-unstyled ">
+                            <li class="mx-2 list-inline-item">
+                                <a href="#" onclick="">
+                                    <ion-icon name="search-outline"></ion-icon>
+                                </a>
+                                <li class="mx-2 list-inline-item">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="mx-2 list-inline-item">
+                                    <a href="#">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </li>
+                                <li class="mx-2 list-inline-item">
+                                    <a href="#">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+    </footer>
+    <!--================   End Footer ===================-->
+
+
+
+
+
+
+    <!--              js files goese here          -->
+
+    <script src="vendors/js/modernizr-3.11.2.min.js"></script>
+    <!--                Font-Awesome                -->
+    <script src="https://kit.fontawesome.com/8b95977338.js" crossorigin="anonymous"></script>
+
+    <!--                   Ion Icon goese here          -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <!--            Jquery file goese here        -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.20/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.20/dist/js/uikit-icons.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="vendors/js/wow.min.js"></script>
+
+    <script src="vendors/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="recources/js/main.js"></script>
+</body>
+
+</html>

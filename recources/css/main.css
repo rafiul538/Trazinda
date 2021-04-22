@@ -1,0 +1,440 @@
+/*=======================================================================================
+
+                    Tamplate Name           :      Tazinda.
+                    Tamplate Description    :      A website where you can find about all things you want about us.
+                    Tamplate URL            :      "#";
+                    Author                  :      Rafiul Alam.
+                    Authour URL             :      "#"
+                    Tamplate ver            :      1.0  .
+===========================================================================================*/
+
+
+/*=======================================================================================
+                                    Css index
+=========================================================================================
+                1.Google fonts
+                2.Common Css
+                3.Reusable Components
+                4. Hero
+                5. 
+
+=========================================================================================*/
+
+
+/*========================================================
+                    Google fonts
+===========================================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,500&family=Roboto:wght@300;400;500;700&display=swap");
+
+/*============================================================
+                    Common Css
+=============================================================*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    background-color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+}
+
+
+/*============================================================
+                    Reusable Component
+=============================================================*/
+
+a:hover {
+    text-decoration: none !important;
+}
+
+section,
+.section,
+footer {
+    padding: 7rem 0;
+}
+
+.section-header {
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+.botn {
+    color: #000;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s all ease-in-out;
+    padding-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.botn:hover {
+    color: #000;
+}
+
+.botn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #000;
+    bottom: 0;
+    width: 0%;
+    transition: .3s width ease-in-out;
+}
+
+.botn:hover::after {
+    width: 100%;
+}
+
+.section-header::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    left: 45%;
+    top: 5rem;
+    width: 10rem;
+    display: block;
+    background-color: #000;
+}
+
+p {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+
+/*============================================================
+                    Hero
+=============================================================*/
+
+#hero {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.nav {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav .navbar-brand {
+    color: #fff !important;
+    font-size: 2rem;
+}
+
+.nav .menu>li .menu-item {
+    color: #fff !important;
+    transition: border 2s;
+}
+
+.nav .menu li .menu-item:hover {
+    border: 0;
+    border-bottom: 2px solid #fff;
+}
+
+.d-menu {
+    color: #000 !important;
+}
+
+#navbarDropdownMenuLinker {
+    color: #000 !important;
+}
+
+.social-icon li {
+    padding: 0;
+    border-radius: 100%;
+    height: 2rem;
+    width: 2rem;
+    padding: .4rem 0 0 .5rem;
+    margin-bottom: 1rem;
+    background-color: rgb(197, 197, 197);
+}
+
+.social-icon i {
+    font-size: 1rem;
+    display: inline;
+    padding: 0 6px;
+}
+
+.social-icon li:hover {
+    background-color: #fff;
+}
+
+.social-icon li a {
+    color: #000;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.hero-content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 100%;
+}
+
+.hero-content-box .hero-header {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.hero-content-box .hero-text {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.hero-content-box .hero-text a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.slide-1 {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-bg-1.jpg) no-repeat center /cover;
+    position: relative;
+}
+
+.slide-2 {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-bg-2.jpg) no-repeat center /cover;
+    position: relative;
+}
+
+.slide-3 {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-bg-3.jpg) no-repeat center /cover;
+    position: relative;
+}
+
+.uk-sticky-fixed {
+    top: 0 !important;
+    background-color: #ff896b;
+}
+
+.uk-sticky-fixed .social-icon li {
+    background-color: transparent;
+}
+
+.uk-sticky-fixed .social-icon li a {
+    color: #fff;
+}
+
+.uk-sticky-fixed .social-icon li a:hover {
+    color: #000;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    height: 3rem;
+    color: #fff;
+}
+
+
+/*============================================================
+                    search bar
+=============================================================*/
+
+.search-bar {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    height: 100vh;
+    top: 0 !important;
+    left: 0;
+    width: 0;
+    z-index: 1200;
+    overflow: hidden;
+}
+
+.form-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-box form input[type="search"] {
+    border: 0;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    font-size: 1.3rem;
+    color: rgb(172, 172, 172);
+    padding-bottom: 6px;
+    font-style: italic;
+}
+
+.closeicon {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+.closeicon a {
+    color: black;
+    font-size: 2.5rem;
+}
+
+.form-box form a {
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+}
+
+.form-box form a:hover {
+    border: 1px solid black;
+    transition-duration: 1s;
+    color: black;
+    padding: 3px 1rem;
+}
+
+
+/*============================================================
+                    Room
+=============================================================*/
+
+.room-img-1 {
+    position: relative;
+}
+
+.abso-img-1 {
+    position: absolute;
+    top: 0;
+    left: 0%
+}
+
+.room-img-2 {
+    position: relative;
+}
+
+.abso-img-2 {
+    position: absolute;
+    top: 30%;
+    right: 0%;
+}
+
+.room-content-text h2 {
+    font-size: 4rem;
+}
+
+
+/*============================================================
+                    Aminities
+=============================================================*/
+
+.aminitie-box {
+    border: 1px solid rgba(173, 170, 170, 0.5);
+    transition-duration: 1s;
+}
+
+.aminitie-box:hover {
+    border: 1px solid #000;
+    transform: translate(5px, -5px);
+}
+
+.aminitie-box ion-icon,
+i {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+
+/*============================================================
+                    News and events
+=============================================================*/
+
+.card {
+    border: 0;
+}
+
+.card-body span {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(172, 172, 172);
+    margin-bottom: 1rem;
+}
+
+.orng {
+    color: rgb(255, 118, 27);
+    text-decoration: none;
+}
+
+.orng:hover {
+    color: rgb(255, 118, 27);
+}
+
+
+/*============================================================
+                    Contact
+=============================================================*/
+
+#contact {
+    background-color: #e6e6e6;
+}
+
+#contact h4 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cont-bg {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.cont-bg::after {
+    content: "";
+    position: absolute;
+    background-color: #ff896b;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+/*============================================================
+                    Footer
+=============================================================*/
+
+.std {
+    color: #000 !important;
+}
+
+.navoo li {
+    margin: 1rem 0;
+}
+
+.navoo li a {
+    color: rgb(131, 131, 131);
+    text-decoration: none;
+    font-weight: 300;
+}
